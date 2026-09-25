@@ -1,0 +1,56 @@
+:root {
+  /* Web font: Quicksand font
+  * Source: Google Fonts (variable)
+  * License: SIL Open Font License 1.1 (OFL-1.1)
+  * Available weights: 300-700
+  * Available styles: Italic, Normal 
+  * Font files: files are downloaded from Google Fonts
+  * External service requests: Requests Quicksand font style sheet from Google Fonts
+  */
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+  /* Web font: Krona One font
+  * Source: Google Fonts (static)
+  * License: SIL Open Font License 1.1 (OFL-1.1)
+  * Available weights: 400
+  * Available styles: Normal 
+  * Font files: files are downloaded from Google Fonts
+  * External service requests: Requests Krona One font style sheet from Google Fonts
+  */ 
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+  /* TODO: Add the licensed web-font source above these rules, if used. */
+  --font-body: "Quicksand", Arial, Helvetica, sans-serif;
+  --font-header: "Krona One", Arial, Helvetica, serif;
+
+  --base-font-size: 1rem;
+  --line-height: 1.6; 
+
+  --step--1: .875rem; 
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+  --step-3: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+
+  --leading-body: 1.6;
+  --measure: 68ch;
+
+  --color-text: #20529e;
+  --color-button: #bb2051;
+  --color-background: #e4e2dd;
+  /* --color-accent: #dfdc2f; */
+}
+* { 
+  box-sizing: border-box; 
+}
+.theme-alt {
+   background: var(--color-action); 
+   color: var(--color-accent);
+   .button{
+    outline: 2px solid var(--color-accent);
+   }
+  .button:hover{
+      background:var(--color-accent);
+      color: var(--color-action);
+    }
+
+  }
