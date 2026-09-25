@@ -9,28 +9,55 @@
 </head>
 <body>
   <header>
-    <p class="eyebrow">Typography practice</p>
-    <h1>Readable, Resilient Type</h1>
-    <p class="lede">Test the system at narrow and wide viewports, at 200% zoom, and with the chosen web font blocked.</p>
+    <div>    
+      <h1>Bingsoo NYC</h1>
+    </div>
+    <div>
+      <nav>
+          <ul class="nav-links">
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+      </nav>
+    </div>
   </header>
   <main>
-    <article class="card">
-      <p class="label">Display sample</p>
-      <h2>A headline that wraps across lines</h2>
-      <p>Good typography remains readable when content, screen size, or font availability changes. This paragraph is long enough to reveal line length and rhythm.</p>
-      <h3>Supporting heading</h3><p>Document the font source, license, fallback stack, scale, and test results.</p>
-      <p><a href="#">Read the supporting documentation</a></p>
-    </article>
-    <aside class="card measure">
-      <h2>Specimen checklist</h2>
-      <ul>
-        <li>Clear hierarchy</li>
-        <li>Comfortable measure</li>
-        <li>Visible link states</li>
-        <li>Stable fallback behavior</li>
-      </ul>
-    </aside>
+    <section class="hero-section">         
+          <h1>We are Bingsoo NYC,</h1>
+          <p>New York City's 1st Korean Shaved Ice stand!</p>
+    </section>
+
+    <section class="cards">
+      /*This section will later be moved to the About Us page*/
+      <section class="card theme-alt">
+        <h2>About Us</h2>
+        <p>Learn more about our origins, what fuels our passion, and a look into the ingredient and product process</p>
+        <a class="button" href="">Click here</a>
+      </section>
+      /*This section will later be moved to the Menu page*/
+      <section class="card">
+        <h2>Explore Our Menu</h2>
+        <p>Good typography remains readable when content, screen size, or font availability changes. This paragraph is long enough to reveal line length and rhythm.</p>
+        <h3>Supporting heading</h3><p>Document the font source, license, fallback stack, scale, and test results.</p>
+        <p><a href="#">Read the supporting documentation</a></p>
+      </section>
+      /*This section will later be moved to the Contact Us page*/
+      <section class="card">
+        <h2>Subscribe to our Newsletter!</h2>
+        <p><a href="#">A text link</a></p>
+        <button type="button">Button</button>
+        <form >
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="name@example.com">
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </section>
+
   </main>
-<footer>  </footer>
+  <footer>  
+
+  </footer>
 </body>
 </html>
