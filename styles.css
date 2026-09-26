@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 :root {
   /* Web font: Quicksand font
   * Source: Google Fonts (variable)
@@ -5,25 +7,20 @@
   * Available weights: 300-700
   * Available styles: Italic, Normal 
   * Font files: files are downloaded from Google Fonts
-  * External service requests: Requests Quicksand font style sheet from Google Fonts
-  */
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+  * External service requests: Requests Quicksand font style sheet from Google Fonts*/
+
   /* Web font: Krona One font
   * Source: Google Fonts (static)
   * License: SIL Open Font License 1.1 (OFL-1.1)
   * Available weights: 400
   * Available styles: Normal 
   * Font files: files are downloaded from Google Fonts
-  * External service requests: Requests Krona One font style sheet from Google Fonts
-  */ 
-    @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+  * External service requests: Requests Krona One font style sheet from Google Fonts */ 
 
-  /* TODO: Add the licensed web-font source above these rules, if used. */
-  
   /*Used for paragraphs*/
-  --font-body: "Quicksand", Arial, Helvetica, sans-serif;
+  --font-body: "Quicksand", "Times New Roman", Helvetica, sans-serif;
   /*Used for headings, subheadings, nav links*/
-  --font-header: "Krona One", Arial, Helvetica, serif;
+  --font-display: "Krona One", "Times New Roman", Helvetica, serif;
 
     /*Sets basic font size, 16px*/
   --base-font-size: 1rem;
@@ -45,11 +42,11 @@
   --color-text: #20529e;
   --color-button: #bb2051;
   --color-background: #e4e2dd;
-  /* --color-accent: #dfdc2f; */
+  --color-accent: #dfdc2f; 
 }
 
 *, *::before, *::after {
-    outline: 1px solid red !important;
+    /* outline: 1px solid red !important;*/
     /* makes more intuitive sizing model for all elements*/ 
     box-sizing: border-box; 
     /* removes any default margins*/
@@ -71,12 +68,18 @@ body,html {
 a{
     /* Removes underlines */
   text-decoration: none;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
-h1,p{
-  
-}
-header{
 
+a:focus{
+  padding: 0.5rem;
+  outline:2px solid var(--color-button);
+}
+
+
+header{
+    font-family: var(--font-display);
     padding:1rem;
     /* sets background color*/
     background-color: var(--color-text);
@@ -86,16 +89,15 @@ header{
     justify-content: space-between;
     /* sets text color*/
     color: var(--color-background);
-    div{
-        display:flex;
-        justify-content: center; 
-        align-items: center;
-    }
+
 }
 
-nav{
-   
+header div{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
 }
+
 .nav-links{
     /* Removes bullet points */
     list-style: none; 
@@ -105,10 +107,12 @@ nav{
     gap: 2rem; 
     /*more breathing room*/
     padding:1rem;
-    a{
-        /* sets text color*/
-       color: var(--color-background); 
-    }   
+ 
+}
+
+.nav-links a{
+  /* sets text color*/
+    color: var(--color-text); 
 }
 
 .hero-section{
@@ -150,15 +154,14 @@ main {
 .theme-alt {
    background: var(--color-button); 
    color: var(--color-background);
-   .button{
+}
+.theme-alt .button{
     outline: 2px solid var(--color-text);
-   }
-  .button:hover{
-      background:var(--color-background);
-      color: var(--color-text);
-    }
+}
+.theme-alt .button:hover{
+    background-color: var(--color-accent);
+}
 
-  }
 @media (prefers-color-scheme: dark){
     header{
         background-color: var(--color-button);
